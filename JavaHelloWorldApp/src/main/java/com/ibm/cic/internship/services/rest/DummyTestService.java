@@ -1,5 +1,7 @@
 package com.ibm.cic.internship.services.rest;
 
+import java.util.Random;
+
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
@@ -14,7 +16,7 @@ public class DummyTestService {
 	@Path("getDummy")
 	@Produces(MediaType.APPLICATION_JSON)
 	public Response getDummy() {
-		ResponseBuilder response = Response.ok(new Dummy("Mostafa", 33));
+		ResponseBuilder response = Response.ok(new Dummy("Dummy Data From Server", new Random().nextInt(100)));
 		return response.build();
 	}
 
