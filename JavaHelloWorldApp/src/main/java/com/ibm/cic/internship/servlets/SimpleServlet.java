@@ -1,4 +1,4 @@
-package wasdev.sample.servlet;
+package com.ibm.cic.internship.servlets;
 
 import java.io.IOException;
 
